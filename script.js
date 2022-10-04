@@ -406,7 +406,61 @@ function drawClass(week) {
 			text(timeName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 40);
 			text(roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 60);
 			pop();
+
+			if (mouseOnHover(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, cellWidth, endPoint - startPoint)) {
+				hightlight(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, startPoint, endPoint, timeName);
+			}
 		}
+	}
+}
+
+function mouseOnHover(topLeftX, topLeftY, wi, he) {
+	return ((mouseX >= topLeftX && mouseX <= topLeftX + wi) && (mouseY >= topLeftY && mouseY <= (topLeftY + he)));
+}
+
+function hightlight(topLeftX, topLeftY, start_point, end_point, time) {
+	let cellWidth = (w - 50) / 7;
+
+	drawDottedLine(topLeftX, topLeftY, 50, topLeftY);
+	drawDottedLine(topLeftX, topLeftY + end_point - start_point, 50, topLeftY + end_point - start_point);
+
+	push();
+	textAlign(CENTER, CENTER);
+	textSize(16);
+	text(time.slice(0, 5), 25, start_point);
+	text(time.slice(6, 13), 25, end_point);
+	line(48, start_point, 52, start_point);
+	line(48, end_point, 52, end_point);
+	pop();
+
+	push();
+	stroke(0);
+	strokeWeight(3);
+	noFill();
+	rect(topLeftX, topLeftY, cellWidth, end_point - start_point);
+	pop();
+}
+
+function drawDottedLine(x1, y1, x2, y2) {
+	let spacing = 2;
+	let diameter = 1;
+
+	let unitVect = createVector(x2 - x1, y2 - y1).normalize();
+	let dotsArr = [];
+	dotsArr.push(createVector(x1, y1));
+	while (dist(dotsArr[dotsArr.length - 1].x, dotsArr[dotsArr.length - 1].y, dotsArr[0].x, dotsArr[0].y) < createVector(x1 - x2, y1 - y2).mag()) {
+		let newDot = dotsArr[dotsArr.length - 1].copy().add(unitVect.copy().mult(spacing + diameter));
+		dotsArr.push(newDot);
+	}
+
+	dotsArr.pop();
+
+	for (let i = 0; i < dotsArr.length; i++) {
+		push();
+		noStroke();
+		fill(0);
+		circle(dotsArr[i].x, dotsArr[i].y, diameter);
+		pop();
 	}
 }
 
@@ -510,7 +564,11 @@ function drawUI() {
 	push();
 	textAlign(CENTER, CENTER);
 	textSize(16);
-	text("6:00", 25, 50);
+	text("06:00", 25, 50);
+	line(48, 50, 52, 50);
+	text("11:00", 25, map(11*60, startDay, endDay, 50, h - 20));
+	line(48, map(11*60, startDay, endDay, 50, h - 20), 52, map(11*60, startDay, endDay, 50, h - 20));
 	text("18:00", 25, h - 20);
+	line(48, h - 20, 52, h - 20);
 	pop();
 }
