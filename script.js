@@ -6,339 +6,461 @@ let startDay = 360; // = 6 * 60
 let endDay = 18*60; // = 22 * 60
 let weekShown = 1;
 
-let colors = [[0, 204, 153], [51, 204, 51], [0, 153, 255], [102, 102, 255], [255, 102, 255], [255, 102, 153], [255, 102, 0], [255, 204, 0], [230, 0, 0]];
+let colors = [[0, 204, 153], [51, 204, 51], [0, 153, 255], [102, 102, 255], [255, 102, 255], [255, 102, 153], [255, 102, 0], [255, 204, 0], [230, 0, 0], [51, 102, 204]];
 
 let timetable_raw = [
-    {
-      "Day": 2,
-      "Time": "06:45-10:05",
-      "Weeks": "1-10,14-15,18-21",
-      "Room": "B1-303",
-      "Class": 135343
-    },
-    {
-      "Day": 2,
-      "Time": "06:45-11:15",
-      "Weeks": "12",
-      "Room": "KTX-B7",
-      "Class": 138993
-    },
-    {
-      "Day": 2,
-      "Time": "06:45-11:15",
-      "Weeks": "13",
-      "Room": "KTX-B7",
-      "Class": 138993
-    },
-    {
-      "Day": 2,
-      "Time": "12:30-15:50",
-      "Weeks": "1-8",
-      "Room": "D6-205",
-      "Class": 136498
-    },
-    {
-      "Day": 2,
-      "Time": "13:15-15:50",
-      "Weeks": "9,10,14-15,18-21",
-      "Room": "D6-205",
-      "Class": 136500
-    },
-    {
-      "Day": 2,
-      "Time": "13:15-16:45",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 2,
-      "Time": "13:15-16:45",
-      "Weeks": "13",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 3,
-      "Time": "06:45-11:15",
-      "Weeks": "13",
-      "Room": "SanB7-2",
-      "Class": 138995
-    },
-    {
-      "Day": 3,
-      "Time": "06:45-11:15",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 3,
-      "Time": "12:30-15:50",
-      "Weeks": "1-10,14-15,18-21",
-      "Room": "D8-302",
-      "Class": 136496
-    },
-    {
-      "Day": 3,
-      "Time": "13:15-16:45",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 3,
-      "Time": "13:15-16:45",
-      "Weeks": "13",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 4,
-      "Time": "06:45-07:45",
-      "Weeks": "1-10,14-15,18-21",
-      "Room": "TC-412",
-      "Class": 726017
-    },
-    {
-      "Day": 4,
-      "Time": "06:45-11:15",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 4,
-      "Time": "06:45-11:15",
-      "Weeks": "13",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 4,
-      "Time": "12:30-15:50",
-      "Weeks": "1-10,14-15,18-21",
-      "Room": "D8-302",
-      "Class": 136495
-    },
-    {
-      "Day": 4,
-      "Time": "13:15-16:45",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 4,
-      "Time": "13:15-16:45",
-      "Weeks": "13",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 5,
-      "Time": "06:45-11:15",
-      "Weeks": "12",
-      "Room": "B6b-101",
-      "Class": 138993
-    },
-    {
-      "Day": 5,
-      "Time": "06:45-11:15",
-      "Weeks": "13",
-      "Room": "B6b-101",
-      "Class": 138993
-    },
-    {
-      "Day": 5,
-      "Time": "09:20-11:45",
-      "Weeks": "1-8",
-      "Room": "D6-205",
-      "Class": 136498
-    },
-    {
-      "Day": 5,
-      "Time": "09:20-11:45",
-      "Weeks": "9,10,14-15,18-21",
-      "Room": "D6-205",
-      "Class": 136500
-    },
-    {
-      "Day": 5,
-      "Time": "13:15-16:45",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 5,
-      "Time": "13:15-16:45",
-      "Weeks": "13",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 6,
-      "Time": "06:45-09:10",
-      "Weeks": "1-8",
-      "Room": "D6-205",
-      "Class": 136498
-    },
-    {
-      "Day": 6,
-      "Time": "06:45-11:15",
-      "Weeks": "12",
-      "Room": "SanB7-2",
-      "Class": 138995
-    },
-    {
-      "Day": 6,
-      "Time": "06:45-11:15",
-      "Weeks": "13",
-      "Room": "SanB7-2",
-      "Class": 138995
-    },
-    {
-      "Day": 6,
-      "Time": "12:30-14:00",
-      "Weeks": "1-10, 14-15, 18-21",
-      "Room": "D5-204",
-      "Class": 135437
-    },
-    {
-      "Day": 6,
-      "Time": "13:15-16:45",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 6,
-      "Time": "13:15-16:45",
-      "Weeks": "13",
-      "Room": "SanB13-4",
-      "Class": 138997
-    },
-    {
-      "Day": 7,
-      "Time": "06:45-11:15",
-      "Weeks": "12",
-      "Room": "SanB13-4",
-      "Class": 138997
-    }
-  ];
+ {
+   "Day": 2,
+   "Time": "06:45-10:05",
+   "Weeks": "27-34,36-43",
+   "Room": "D9-401",
+   "Class": 139448
+ },
+ {
+   "Day": 2,
+   "Time": "07:30-09:10",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 2,
+   "Time": "07:30-09:10",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 2,
+   "Time": "09:20-11:45",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 2,
+   "Time": "09:20-11:45",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 2,
+   "Time": "10:15-11:45",
+   "Weeks": "27-34,36-43",
+   "Room": "D9-401",
+   "Class": 139434
+ },
+ {
+   "Day": 2,
+   "Time": "13:15-14:55",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 2,
+   "Time": "13:15-14:55",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 2,
+   "Time": "15:05-17:30",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 2,
+   "Time": "15:05-17:30",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 3,
+   "Time": "07:30-09:10",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 3,
+   "Time": "07:30-09:10",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 3,
+   "Time": "09:20-11:45",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 3,
+   "Time": "09:20-11:45",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 3,
+   "Time": "12:30-14:55",
+   "Weeks": "27-34,36-43",
+   "Room": "D4-402",
+   "Class": 140726
+ },
+ {
+   "Day": 3,
+   "Time": "13:15-14:55",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 3,
+   "Time": "13:15-14:55",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 3,
+   "Time": "15:05-17:30",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 3,
+   "Time": "15:05-17:30",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 3,
+   "Time": "15:05-17:30",
+   "Weeks": "27-34,36-43",
+   "Room": "D8-402",
+   "Class": 140727
+ },
+ {
+   "Day": 4,
+   "Time": "07:30-09:10",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 4,
+   "Time": "07:30-09:10",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 4,
+   "Time": "09:20-11:45",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 4,
+   "Time": "09:20-11:45",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 4,
+   "Time": "12:30-14:00",
+   "Weeks": "27-34,36-43",
+   "Room": "D6-407",
+   "Class": 140721
+ },
+ {
+   "Day": 4,
+   "Time": "13:15-14:55",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 4,
+   "Time": "13:15-14:55",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 4,
+   "Time": "15:05-17:30",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 4,
+   "Time": "15:05-17:30",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 5,
+   "Time": "07:30-09:10",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 5,
+   "Time": "07:30-09:10",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 5,
+   "Time": "08:25-10:05",
+   "Weeks": "27-34,36-43",
+   "Room": "D9-502",
+   "Class": 139475
+ },
+ {
+   "Day": 5,
+   "Time": "09:20-11:00",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 5,
+   "Time": "09:20-11:45",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 5,
+   "Time": "10:15-11:45",
+   "Weeks": "27,29,31,33,37,39,41,43",
+   "Room": "D5-101",
+   "Class": 140724
+ },
+ {
+   "Day": 5,
+   "Time": "12:30-14:00",
+   "Weeks": "27-34,36-43",
+   "Room": "D9-401",
+   "Class": 139472
+ },
+ {
+   "Day": 5,
+   "Time": "13:15-14:55",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 5,
+   "Time": "15:05-17:30",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 6,
+   "Time": "07:30-09:10",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 6,
+   "Time": "07:30-09:10",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 6,
+   "Time": "09:20-11:00",
+   "Weeks": "26",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 6,
+   "Time": "09:20-11:45",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 6,
+   "Time": "10:15-11:45",
+   "Weeks": "27-34,36-43",
+   "Room": "D5-306",
+   "Class": 139445
+ },
+ {
+   "Day": 6,
+   "Time": "12:30-14:00",
+   "Weeks": "27-34,36-43",
+   "Room": "D5-306",
+   "Class": 139445
+ },
+ {
+   "Day": 6,
+   "Time": "13:15-14:55",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140123
+ },
+ {
+   "Day": 6,
+   "Time": "15:05-17:30",
+   "Weeks": "25",
+   "Room": "D3-501",
+   "Class": 140122
+ },
+ {
+   "Day": 6,
+   "Time": "15:05-17:30",
+   "Weeks": "27-34,36-43",
+   "Room": "D4-405",
+   "Class": 140726
+ },
+ {
+   "Day": 7,
+   "Time": "07:25-11:35",
+   "Weeks": "41,42,43",
+   "Room": "D3-502",
+   "Class": 730366
+ }
+];
 let lopDangKi_raw = [
     {
-      "Mã lớp": 136498,
-      "Mã lớp kèm": 136498,
-      "Tên lớp": "Tiếng Pháp VP 1",
-      "Mã học phần": "FL1601",
+      "Mã lớp": 140726,
+      "Mã lớp kèm": 140726,
+      "Tên lớp": "Tiếng Pháp VP 3",
+      "Mã HP": "FL1603",
       "Loại lớp": "LT+BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 0
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 0
     },
     {
-      "Mã lớp": 136500,
-      "Mã lớp kèm": 136500,
-      "Tên lớp": "Tiếng Pháp VP 2",
-      "Mã học phần": "FL1602",
+      "Mã lớp": 139448,
+      "Mã lớp kèm": 139448,
+      "Tên lớp": "Toán rời rạc",
+      "Mã HP": "IT3020",
       "Loại lớp": "LT+BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 0
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 3
     },
     {
-      "Mã lớp": 135437,
-      "Mã lớp kèm": 135437,
-      "Tên lớp": "Nhập môn CNTT và TT",
-      "Mã học phần": "IT2110",
+      "Mã lớp": 139434,
+      "Mã lớp kèm": 139434,
+      "Tên lớp": "C Programming Language",
+      "Mã HP": "IT3210",
       "Loại lớp": "LT+BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 2
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 2
     },
     {
-      "Mã lớp": 135343,
-      "Mã lớp kèm": 135343,
-      "Tên lớp": "Kiến thức máy tính",
-      "Mã học phần": "IT2120",
+      "Mã lớp": 139445,
+      "Mã lớp kèm": 139445,
+      "Tên lớp": "C Programming (Intro)",
+      "Mã HP": "IT3220",
       "Loại lớp": "BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 2
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 2
     },
     {
-      "Mã lớp": 136496,
-      "Mã lớp kèm": 136496,
-      "Tên lớp": "Giải tích I",
-      "Mã học phần": "MI1114",
-      "Loại lớp": "LT+BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 3
-    },
-    {
-      "Mã lớp": 136495,
-      "Mã lớp kèm": 136495,
-      "Tên lớp": "Đại số tuyến tính",
-      "Mã học phần": "MI1144",
-      "Loại lớp": "LT+BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 3
-    },
-    {
-      "Mã lớp": 138995,
-      "Mã lớp kèm": 138993,
-      "Tên lớp": "Quân sự chung",
-      "Mã học phần": "MIL1230",
+      "Mã lớp": 139475,
+      "Mã lớp kèm": 139472,
+      "Tên lớp": "Giải tích II",
+      "Mã HP": "MI1124",
       "Loại lớp": "BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 0
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 3
     },
     {
-      "Mã lớp": 138997,
-      "Mã lớp kèm": 138997,
-      "Tên lớp": "Kỹ thuật chiến đấu bộ binh và chiến thuật",
-      "Mã học phần": "MIL1240",
+      "Mã lớp": 140122,
+      "Mã lớp kèm": 140122,
+      "Tên lớp": "Đường lối QP&AN",
+      "Mã HP": "MIL1210",
       "Loại lớp": "LT+BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 0
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 0
     },
     {
-      "Mã lớp": 726017,
-      "Mã lớp kèm": 726017,
-      "Tên lớp": "Lý luận TDTT",
-      "Mã học phần": "PE1014",
+      "Mã lớp": 140123,
+      "Mã lớp kèm": 140123,
+      "Tên lớp": "Công tác QP&AN",
+      "Mã HP": "MIL1220",
       "Loại lớp": "LT+BT",
-      "Trạng thái lớp": "Hoàn thành đăng ký",
-      "Yêu cầu": " ",
-      "Trạng thái đăng kí": "Thành công",
-      "Loại đăng kí": "Bắt buộc",
-      "Tín chỉ": 0
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 0
+    },
+    {
+      "Mã lớp": 140727,
+      "Mã lớp kèm": 140727,
+      "Tên lớp": "Vật lý I",
+      "Mã HP": "PH1114",
+      "Loại lớp": "LT+BT",
+      "TT lớp": "Đăng ký chính thức",
+      "Yêu cầu": "TN",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 3
+    },
+    {
+      "Mã lớp": 730366,
+      "Mã lớp kèm": 730366,
+      "Tên lớp": "Vật lý I (TN)",
+      "Mã HP": "PH1114",
+      "Loại lớp": "TN",
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 0
+    },
+    {
+      "Mã lớp": 140724,
+      "Mã lớp kèm": 140721,
+      "Tên lớp": "Triết học Mác - Lênin",
+      "Mã HP": "SSH1111",
+      "Loại lớp": "BT",
+      "TT lớp": "Đăng ký chính thức",
+      "Trạng thái ĐK": "Thành công",
+      "loại ĐK": "Bắt buộc",
+      "TC": 3
     }
   ];
 
-let weekNum = 21;
+let weekNum = 19;
 let selectDOM;
 
 function setup() {
@@ -347,9 +469,9 @@ function setup() {
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
   	for (let i = 0; i < weekNum; i++) {
-  		selectDOM.option("tuần " + (i + 1));
+  		selectDOM.option("tuần " + (i + 25));
   	}
-  	selectDOM.selected("tuần 1");
+  	selectDOM.selected("tuần 25");
   	//selectDOM.changed(onchangeSelEvent);
 
   	for (let i = 0; i < timetable_raw.length; i++) {
