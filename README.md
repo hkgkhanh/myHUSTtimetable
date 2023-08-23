@@ -1,5 +1,5 @@
 # myHUSTtimetable
-personal website to graphize my schedule
+personal website to graph my university schedule
 
 ### How to use
 ##### 1/ create an excel file of schedule from ctt.hust.edu.vn
