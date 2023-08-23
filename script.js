@@ -6,8 +6,38 @@ let startDay = 360; // = 6 * 60
 let endDay = 18*60; // = 22 * 60
 let weekShown = 1;
 
-let colors = [[0, 204, 153], [51, 204, 51], [0, 153, 255], [102, 102, 255], [255, 102, 255], [255, 102, 153], [255, 102, 0], [255, 204, 0], [230, 0, 0], [51, 102, 204]];
+let colors = [
+	[255, 192, 203],
+	[238, 130, 238],
+	[123, 104, 238],
+	[250, 128, 114],
+	[255, 165, 0],
+	[240, 230, 140],
+	[173, 255, 47],
+	[102, 205, 170],
+	[205, 133, 63],
+	[119, 136, 153],
+	[188, 143, 143],
+	[255, 215, 0]
+];
+/*
+// IT, MI, FL, SSH, PE, SUP (the rest)
+let MIcolors = [
+	[255, 192, 203],
+	[255, 105, 180],
+	[255, 20, 147],
+	[219, 112, 147],
+	[199, 21, 133]
+];
 
+let ITcolors = [
+	[50, 205, 50],
+	[152, 251, 152],
+	[46, 139, 87],
+	[34, 139, 34],
+	[154, 205, 50],
+];
+*/
 let timetable_raw = [
  {
    "Day": 2,
@@ -469,7 +499,8 @@ function setup() {
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
   	for (let i = 0; i < weekNum; i++) {
-  		selectDOM.option("tuần " + (i + 25));
+  		selectDOM.option("tuần " + (i + 25)); // semeter 2
+  		//selectDOM.option("tuần " + (i + 1)); // semeter 1
   	}
   	selectDOM.selected("tuần 25");
   	//selectDOM.changed(onchangeSelEvent);
