@@ -307,10 +307,11 @@ function setup() {
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
   	for (let i = 0; i < weekNum; i++) {
-  		selectDOM.option("tuần " + (i + 25)); // semeter 2
-  		//selectDOM.option("tuần " + (i + 1)); // semeter 1
+  		//selectDOM.option("tuần " + (i + 25)); // semeter 2
+  		selectDOM.option("tuần " + (i + 1)); // semeter 1
   	}
-  	selectDOM.selected("tuần 25");
+  	//selectDOM.selected("tuần 25"); // semester 2
+    selectDOM.selected("tuần 1"); // semester 1
   	//selectDOM.changed(onchangeSelEvent);
 
   	for (let i = 0; i < timetable_raw.length; i++) {
