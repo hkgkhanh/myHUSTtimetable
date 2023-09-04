@@ -39,454 +39,262 @@ let ITcolors = [
 ];
 */
 let timetable_raw = [
- {
-   "Day": 2,
-   "Time": "06:45-10:05",
-   "Weeks": "27-34,36-43",
-   "Room": "D9-401",
-   "Class": 139448
- },
- {
-   "Day": 2,
-   "Time": "07:30-09:10",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 2,
-   "Time": "07:30-09:10",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 2,
-   "Time": "09:20-11:45",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 2,
-   "Time": "09:20-11:45",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 2,
-   "Time": "10:15-11:45",
-   "Weeks": "27-34,36-43",
-   "Room": "D9-401",
-   "Class": 139434
- },
- {
-   "Day": 2,
-   "Time": "13:15-14:55",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 2,
-   "Time": "13:15-14:55",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 2,
-   "Time": "15:05-17:30",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 2,
-   "Time": "15:05-17:30",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 3,
-   "Time": "07:30-09:10",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 3,
-   "Time": "07:30-09:10",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 3,
-   "Time": "09:20-11:45",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 3,
-   "Time": "09:20-11:45",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 3,
-   "Time": "12:30-14:55",
-   "Weeks": "27-34,36-43",
-   "Room": "D4-402",
-   "Class": 140726
- },
- {
-   "Day": 3,
-   "Time": "13:15-14:55",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 3,
-   "Time": "13:15-14:55",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 3,
-   "Time": "15:05-17:30",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 3,
-   "Time": "15:05-17:30",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 3,
-   "Time": "15:05-17:30",
-   "Weeks": "27-34,36-43",
-   "Room": "D8-402",
-   "Class": 140727
- },
- {
-   "Day": 4,
-   "Time": "07:30-09:10",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 4,
-   "Time": "07:30-09:10",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 4,
-   "Time": "09:20-11:45",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 4,
-   "Time": "09:20-11:45",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 4,
-   "Time": "12:30-14:00",
-   "Weeks": "27-34,36-43",
-   "Room": "D6-407",
-   "Class": 140721
- },
- {
-   "Day": 4,
-   "Time": "13:15-14:55",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 4,
-   "Time": "13:15-14:55",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 4,
-   "Time": "15:05-17:30",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 4,
-   "Time": "15:05-17:30",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 5,
-   "Time": "07:30-09:10",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 5,
-   "Time": "07:30-09:10",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 5,
-   "Time": "08:25-10:05",
-   "Weeks": "27-34,36-43",
-   "Room": "D9-502",
-   "Class": 139475
- },
- {
-   "Day": 5,
-   "Time": "09:20-11:00",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 5,
-   "Time": "09:20-11:45",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 5,
-   "Time": "10:15-11:45",
-   "Weeks": "27,29,31,33,37,39,41,43",
-   "Room": "D5-101",
-   "Class": 140724
- },
- {
-   "Day": 5,
-   "Time": "12:30-14:00",
-   "Weeks": "27-34,36-43",
-   "Room": "D9-401",
-   "Class": 139472
- },
- {
-   "Day": 5,
-   "Time": "13:15-14:55",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 5,
-   "Time": "15:05-17:30",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 6,
-   "Time": "07:30-09:10",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 6,
-   "Time": "07:30-09:10",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 6,
-   "Time": "09:20-11:00",
-   "Weeks": "26",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 6,
-   "Time": "09:20-11:45",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 6,
-   "Time": "10:15-11:45",
-   "Weeks": "27-34,36-43",
-   "Room": "D5-306",
-   "Class": 139445
- },
- {
-   "Day": 6,
-   "Time": "12:30-14:00",
-   "Weeks": "27-34,36-43",
-   "Room": "D5-306",
-   "Class": 139445
- },
- {
-   "Day": 6,
-   "Time": "13:15-14:55",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140123
- },
- {
-   "Day": 6,
-   "Time": "15:05-17:30",
-   "Weeks": "25",
-   "Room": "D3-501",
-   "Class": 140122
- },
- {
-   "Day": 6,
-   "Time": "15:05-17:30",
-   "Weeks": "27-34,36-43",
-   "Room": "D4-405",
-   "Class": 140726
- },
- {
-   "Day": 7,
-   "Time": "07:25-11:35",
-   "Weeks": "41,42,43",
-   "Room": "D3-502",
-   "Class": 730366
- }
+    {
+        "Day": "2",
+        "Time": "09:20-11:45",
+        "Weeks": "3-10, 12-19",
+        "Room": "D9-501",
+        "Class": "143570"
+    },
+    {
+        "Day": "2",
+        "Time": "14:10-16:45",
+        "Weeks": "3-10,12-19",
+        "Room": "D6-205",
+        "Class": "143935"
+    },
+    {
+        "Day": "3",
+        "Time": "06:45-10:05",
+        "Weeks": "3-10, 12-19",
+        "Room": "D9-407",
+        "Class": "143645"
+    },
+    {
+        "Day": "3",
+        "Time": "10:15-11:45",
+        "Weeks": "3",
+        "Room": "D5-302",
+        "Class": "143622"
+    },
+    {
+        "Day": "3",
+        "Time": "10:15-11:45",
+        "Weeks": "4-10, 12-19",
+        "Room": "B1-301",
+        "Class": "143622"
+    },
+    {
+        "Day": "3",
+        "Time": "12:30-14:00",
+        "Weeks": "3",
+        "Room": "D5-302",
+        "Class": "143622"
+    },
+    {
+        "Day": "3",
+        "Time": "12:30-14:00",
+        "Weeks": "4-10, 12-19",
+        "Room": "B1-301",
+        "Class": "143622"
+    },
+    {
+        "Day": "3",
+        "Time": "14:10-17:30",
+        "Weeks": "3-10, 12-19",
+        "Room": "B1-302",
+        "Class": "143606"
+    },
+    {
+        "Day": "4",
+        "Time": "12:30-14:55",
+        "Weeks": "3-10,12-19",
+        "Room": "D6-205",
+        "Class": "143935"
+    },
+    {
+        "Day": "4",
+        "Time": "15:05-17:30",
+        "Weeks": "3-10, 12-19",
+        "Room": "D9-401",
+        "Class": "143616"
+    },
+    {
+        "Day": "5",
+        "Time": "08:25-10:05",
+        "Weeks": "3-10,12-19",
+        "Room": "D5-104",
+        "Class": "146411"
+    },
+    {
+        "Day": "5",
+        "Time": "14:00-15:00",
+        "Weeks": "3-10,12-19",
+        "Room": "NTD",
+        "Class": "733206"
+    },
+    {
+        "Day": "6",
+        "Time": "06:45-09:10",
+        "Weeks": "3,5,7,9,13,15,17,19",
+        "Room": "D3-5-401",
+        "Class": "146780"
+    },
+    {
+        "Day": "6",
+        "Time": "06:45-09:10",
+        "Weeks": "4,6,8,10,12,14,16,18",
+        "Room": "D3-5-401",
+        "Class": "146781"
+    },
+    {
+        "Day": "6",
+        "Time": "12:30-14:55",
+        "Weeks": "3-10, 12-19",
+        "Room": "D9-401",
+        "Class": "143610"
+    },
+    {
+        "Day": "6",
+        "Time": "15:05-17:30",
+        "Weeks": "3-10, 12-19",
+        "Room": "D9-501",
+        "Class": "143613"
+    }
 ];
 let lopDangKi_raw = [
     {
-      "Mã lớp": 140726,
-      "Mã lớp kèm": 140726,
-      "Tên lớp": "Tiếng Pháp VP 3",
-      "Mã HP": "FL1603",
-      "Loại lớp": "LT+BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 0
+        "Mã lớp": "143935",
+        "Mã lớp kèm": "143935",
+        "Tên lớp": "Tiếng Pháp VP 4",
+        "Mã HP": "FL1604",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "0"
     },
     {
-      "Mã lớp": 139448,
-      "Mã lớp kèm": 139448,
-      "Tên lớp": "Toán rời rạc",
-      "Mã HP": "IT3020",
-      "Loại lớp": "LT+BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 3
+        "Mã lớp": "143645",
+        "Mã lớp kèm": "143645",
+        "Tên lớp": "Technical Writing and Presentation",
+        "Mã HP": "IT2030",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "3"
     },
     {
-      "Mã lớp": 139434,
-      "Mã lớp kèm": 139434,
-      "Tên lớp": "C Programming Language",
-      "Mã HP": "IT3210",
-      "Loại lớp": "LT+BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 2
+        "Mã lớp": "143622",
+        "Mã lớp kèm": "143622",
+        "Tên lớp": "Điện tử cho CNTT lab",
+        "Mã HP": "IT2140",
+        "Loại lớp": "BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     },
     {
-      "Mã lớp": 139445,
-      "Mã lớp kèm": 139445,
-      "Tên lớp": "C Programming (Intro)",
-      "Mã HP": "IT3220",
-      "Loại lớp": "BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 2
+        "Mã lớp": "143610",
+        "Mã lớp kèm": "143610",
+        "Tên lớp": "Cấu trúc dữ liệu và thuật toán",
+        "Mã HP": "IT3011",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     },
     {
-      "Mã lớp": 139475,
-      "Mã lớp kèm": 139472,
-      "Tên lớp": "Giải tích II",
-      "Mã HP": "MI1124",
-      "Loại lớp": "BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 3
+        "Mã lớp": "143606",
+        "Mã lớp kèm": "143606",
+        "Tên lớp": "Lập trình C cơ bản",
+        "Mã HP": "IT3230",
+        "Loại lớp": "BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     },
     {
-      "Mã lớp": 140122,
-      "Mã lớp kèm": 140122,
-      "Tên lớp": "Đường lối QP&AN",
-      "Mã HP": "MIL1210",
-      "Loại lớp": "LT+BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 0
+        "Mã lớp": "143616",
+        "Mã lớp kèm": "143616",
+        "Tên lớp": "Điện tử cho CNTT",
+        "Mã HP": "IT3420",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     },
     {
-      "Mã lớp": 140123,
-      "Mã lớp kèm": 140123,
-      "Tên lớp": "Công tác QP&AN",
-      "Mã HP": "MIL1220",
-      "Loại lớp": "LT+BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 0
+        "Mã lớp": "143613",
+        "Mã lớp kèm": "143613",
+        "Tên lớp": "Xử lý tín hiệu",
+        "Mã HP": "IT4172",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     },
     {
-      "Mã lớp": 140727,
-      "Mã lớp kèm": 140727,
-      "Tên lớp": "Vật lý I",
-      "Mã HP": "PH1114",
-      "Loại lớp": "LT+BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Yêu cầu": "TN",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 3
+        "Mã lớp": "143570",
+        "Mã lớp kèm": "143570",
+        "Tên lớp": "Nhập môn kỹ thuật truyền thông",
+        "Mã HP": "IT4593",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     },
     {
-      "Mã lớp": 730366,
-      "Mã lớp kèm": 730366,
-      "Tên lớp": "Vật lý I (TN)",
-      "Mã HP": "PH1114",
-      "Loại lớp": "TN",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 0
+        "Mã lớp": "146411",
+        "Mã lớp kèm": "146411",
+        "Tên lớp": "Xác suất thống kê",
+        "Mã HP": "MI2021",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     },
     {
-      "Mã lớp": 140724,
-      "Mã lớp kèm": 140721,
-      "Tên lớp": "Triết học Mác - Lênin",
-      "Mã HP": "SSH1111",
-      "Loại lớp": "BT",
-      "TT lớp": "Đăng ký chính thức",
-      "Trạng thái ĐK": "Thành công",
-      "loại ĐK": "Bắt buộc",
-      "TC": 3
+        "Mã lớp": "733206",
+        "Mã lớp kèm": "733206",
+        "Tên lớp": "Bóng bàn 1",
+        "Mã HP": "PE2401",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "0"
+    },
+    {
+        "Mã lớp": "146781",
+        "Mã lớp kèm": "146780",
+        "Tên lớp": "Kinh tế chính trị Mác - Lênin",
+        "Mã HP": "SSH1121",
+        "Loại lớp": "BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "": "",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
     }
   ];
 
