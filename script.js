@@ -20,24 +20,7 @@ let colors = [
 	[188, 143, 143],
 	[255, 215, 0]
 ];
-/*
-// IT, MI, FL, SSH, PE, SUP (the rest)
-let MIcolors = [
-	[255, 192, 203],
-	[255, 105, 180],
-	[255, 20, 147],
-	[219, 112, 147],
-	[199, 21, 133]
-];
 
-let ITcolors = [
-	[50, 205, 50],
-	[152, 251, 152],
-	[46, 139, 87],
-	[34, 139, 34],
-	[154, 205, 50],
-];
-*/
 let timetable_raw = [
     {
         "Day": "2",
@@ -160,7 +143,6 @@ let lopDangKi_raw = [
         "Mã HP": "FL1604",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -173,7 +155,6 @@ let lopDangKi_raw = [
         "Mã HP": "IT2030",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -186,7 +167,6 @@ let lopDangKi_raw = [
         "Mã HP": "IT2140",
         "Loại lớp": "BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -195,11 +175,10 @@ let lopDangKi_raw = [
     {
         "Mã lớp": "143610",
         "Mã lớp kèm": "143610",
-        "Tên lớp": "Cấu trúc dữ liệu và thuật toán",
+        "Tên lớp": "Cấu trúc dữ liệu và\ngiải thuật",
         "Mã HP": "IT3011",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -212,7 +191,6 @@ let lopDangKi_raw = [
         "Mã HP": "IT3230",
         "Loại lớp": "BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -225,7 +203,6 @@ let lopDangKi_raw = [
         "Mã HP": "IT3420",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -238,7 +215,6 @@ let lopDangKi_raw = [
         "Mã HP": "IT4172",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -247,11 +223,10 @@ let lopDangKi_raw = [
     {
         "Mã lớp": "143570",
         "Mã lớp kèm": "143570",
-        "Tên lớp": "Nhập môn kỹ thuật truyền thông",
+        "Tên lớp": "Nhập môn\nkĩ thuật truyền thông",
         "Mã HP": "IT4593",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -264,7 +239,6 @@ let lopDangKi_raw = [
         "Mã HP": "MI2021",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -277,7 +251,6 @@ let lopDangKi_raw = [
         "Mã HP": "PE2401",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -286,11 +259,10 @@ let lopDangKi_raw = [
     {
         "Mã lớp": "146781",
         "Mã lớp kèm": "146780",
-        "Tên lớp": "Kinh tế chính trị Mác - Lênin",
+        "Tên lớp": "Kinh tế chính trị\nMác - Lênin",
         "Mã HP": "SSH1121",
         "Loại lớp": "BT",
         "TT lớp": "Điều chỉnh đăng ký",
-        "": "",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
@@ -307,11 +279,11 @@ function setup() {
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
   	for (let i = 0; i < weekNum; i++) {
-  		//selectDOM.option("tuần " + (i + 25)); // semeter 2
-  		selectDOM.option("tuần " + (i + 1)); // semeter 1
+  		//selectDOM.option("tuần " + (i + 25)); // semester 2
+  		selectDOM.option("tuần " + (i + 1)); // semester 1
   	}
   	//selectDOM.selected("tuần 25"); // semester 2
-    selectDOM.selected("tuần 1"); // semester 1
+    selectDOM.selected("tuần 3"); // semester 1
   	//selectDOM.changed(onchangeSelEvent);
 
   	for (let i = 0; i < timetable_raw.length; i++) {
@@ -345,6 +317,7 @@ function drawClass(week) {
 
 		if (classIsInThisWeek(timetable_raw[i], week)) {
 			let className = getClassName(timetable_raw[i]);
+      let classNameWidth = textWidth(className);
 			let colorAssigned = getColorAssigned(timetable_raw[i]);
 			let timeName = timetable_raw[i]["Time"];
 			let roomName = timetable_raw[i]["Room"];
@@ -360,20 +333,32 @@ function drawClass(week) {
 
 			push();
 			textSize(16);
-			text(className, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 20);
+      textWrap(WORD);
+      textAlign(CENTER, TOP);
+      if (endPoint - startPoint <= (h - 70)/12) {
+        text(className + '\n' + timeName + '     ' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
+      } else {
+        text(className + '\n' + timeName + '\n' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
+      }
 			pop();
-
-			push();
-			textSize(14);
-			text(timeName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 40);
-			text(roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 60);
-			pop();
-
-			if (mouseOnHover(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, cellWidth, endPoint - startPoint)) {
-				hightlight(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, startPoint, endPoint, timeName);
-			}
 		}
 	}
+
+  for (let i = 0; i < timetable_raw.length; i++) {
+    if (classIsInThisWeek(timetable_raw[i], week)) {
+      let className = getClassName(timetable_raw[i]);
+      let colorAssigned = getColorAssigned(timetable_raw[i]);
+      let timeName = timetable_raw[i]["Time"];
+      let roomName = timetable_raw[i]["Room"];
+      let classCode = timetable_raw[i]["Class"];
+      let startPoint = map(timetable_raw[i]["startTime"], startDay, endDay, 50, h - 20);
+      let endPoint = map(timetable_raw[i]["endTime"], startDay, endDay, 50, h - 20);
+      
+      if (mouseOnHover(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, cellWidth, endPoint - startPoint)) {
+        hightlight(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, startPoint, endPoint, timeName);
+      }
+    }
+  }
 }
 
 function mouseOnHover(topLeftX, topLeftY, wi, he) {
@@ -397,7 +382,7 @@ function hightlight(topLeftX, topLeftY, start_point, end_point, time) {
 
 	push();
 	stroke(0);
-	strokeWeight(3);
+	strokeWeight(2);
 	noFill();
 	rect(topLeftX, topLeftY, cellWidth, end_point - start_point);
 	pop();
