@@ -203,7 +203,7 @@ let lopDangKi_raw = [
     {
         "Mã lớp": "149060",
         "Mã lớp kèm": "149060",
-        "Tên lớp": "Phương trình vi phân và Chuỗi",
+        "Tên lớp": "Phương trình vi phân\nvà Chuỗi",
         "Mã HP": "MI1134",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
@@ -270,8 +270,6 @@ function draw() {
 	background(225);
     drawClass(parseInt(selectDOM.value().slice(5)));
 	drawUI();
-
-	
 }
 
 function drawClass(week) {
@@ -299,9 +297,9 @@ function drawClass(week) {
             textWrap(WORD);
             textAlign(CENTER, TOP);
             if (endPoint - startPoint <= 60) {
-                text(className + '\n' + timeName + '     ' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
+                text(className + '\n' + timeName + '     ' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 8, cellWidth);
             } else {
-                text(className + '\n' + timeName + '\n' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
+                text(className + '\n' + timeName + '\n' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 8, cellWidth);
             }
 			pop();
 		}
