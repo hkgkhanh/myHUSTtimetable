@@ -2,8 +2,8 @@ let w = 1400;
 let h = 700;
 
 let weekDays = [null, "Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-let startDay = 360; // = 6 * 60
-let endDay = 18*60; // = 22 * 60
+let startDay = 360 + 45;
+let endDay = 18*60 - 30;
 let weekShown = 1;
 
 let colors = [
@@ -24,123 +24,115 @@ let colors = [
 let timetable_raw = [
     {
         "Day": "2",
-        "Time": "09:20-11:45",
-        "Weeks": "3-10, 12-19",
-        "Room": "D9-501",
-        "Class": "143570"
+        "Time": "06:45-10:05",
+        "Weeks": "25-32,34-42",
+        "Room": "C7-111",
+        "Class": "149060"
     },
     {
         "Day": "2",
-        "Time": "14:10-16:45",
-        "Weeks": "3-10,12-19",
-        "Room": "D6-205",
-        "Class": "143935"
-    },
-    {
-        "Day": "3",
-        "Time": "06:45-10:05",
-        "Weeks": "3-10, 12-19",
-        "Room": "D9-407",
-        "Class": "143645"
-    },
-    {
-        "Day": "3",
         "Time": "10:15-11:45",
-        "Weeks": "3",
-        "Room": "D5-302",
-        "Class": "143622"
+        "Weeks": "25-32,34-42",
+        "Room": "C7-108",
+        "Class": "149062"
     },
     {
-        "Day": "3",
-        "Time": "10:15-11:45",
-        "Weeks": "4-10, 12-19",
-        "Room": "B1-301",
-        "Class": "143622"
-    },
-    {
-        "Day": "3",
+        "Day": "2",
         "Time": "12:30-14:00",
-        "Weeks": "3",
-        "Room": "D5-302",
-        "Class": "143622"
-    },
-    {
-        "Day": "3",
-        "Time": "12:30-14:00",
-        "Weeks": "4-10, 12-19",
-        "Room": "B1-301",
-        "Class": "143622"
-    },
-    {
-        "Day": "3",
-        "Time": "14:10-17:30",
-        "Weeks": "3-10, 12-19",
-        "Room": "B1-302",
-        "Class": "143606"
-    },
-    {
-        "Day": "4",
-        "Time": "12:30-14:55",
-        "Weeks": "3-10,12-19",
-        "Room": "D6-205",
-        "Class": "143935"
-    },
-    {
-        "Day": "4",
-        "Time": "15:05-17:30",
-        "Weeks": "3-10, 12-19",
+        "Weeks": "25-32, 34-42",
         "Room": "D9-401",
-        "Class": "143616"
+        "Class": "147774"
     },
     {
-        "Day": "5",
-        "Time": "08:25-10:05",
-        "Weeks": "3-10,12-19",
-        "Room": "D5-104",
-        "Class": "146411"
+        "Day": "2",
+        "Time": "15:05-17:30",
+        "Weeks": "25,27,29,31,35,37,39,41",
+        "Room": "D3-5-401",
+        "Class": "151083"
     },
     {
-        "Day": "5",
-        "Time": "14:00-15:00",
-        "Weeks": "3-10,12-19",
+        "Day": "2",
+        "Time": "15:05-17:30",
+        "Weeks": "26,28,30,32,34,36,38,40,42",
+        "Room": "D3-5-401",
+        "Class": "151086"
+    },
+    {
+        "Day": "3",
+        "Time": "12:30-14:55",
+        "Weeks": "25-32, 34-42",
+        "Room": "D9-401",
+        "Class": "147786"
+    },
+    {
+        "Day": "3",
+        "Time": "15:05-17:30",
+        "Weeks": "25,27,29,31,34,36,38,40,42",
+        "Room": "D7-403",
+        "Class": "150821"
+    },
+    {
+        "Day": "4",
+        "Time": "06:45-07:45",
+        "Weeks": "25-32,34-42",
         "Room": "NTD",
-        "Class": "733206"
+        "Class": "741372"
     },
     {
-        "Day": "6",
-        "Time": "06:45-09:10",
-        "Weeks": "3,5,7,9,13,15,17,19",
-        "Room": "D3-5-401",
-        "Class": "146780"
+        "Day": "4",
+        "Time": "10:15-11:45",
+        "Weeks": "25-32, 34-42",
+        "Room": "B1-203",
+        "Class": "147790"
     },
     {
-        "Day": "6",
-        "Time": "06:45-09:10",
-        "Weeks": "4,6,8,10,12,14,16,18",
-        "Room": "D3-5-401",
-        "Class": "146781"
+        "Day": "4",
+        "Time": "12:30-14:00",
+        "Weeks": "25-32, 34-42",
+        "Room": "B1-203",
+        "Class": "147790"
     },
     {
-        "Day": "6",
-        "Time": "12:30-14:55",
-        "Weeks": "3-10, 12-19",
-        "Room": "D9-401",
-        "Class": "143610"
+        "Day": "4",
+        "Time": "14:10-17:30",
+        "Weeks": "25-32, 34-42",
+        "Room": "B1-205",
+        "Class": "147777"
     },
     {
-        "Day": "6",
-        "Time": "15:05-17:30",
-        "Weeks": "3-10, 12-19",
+        "Day": "5",
+        "Time": "08:25-11:45",
+        "Weeks": "25-32,34-42",
+        "Room": "C7-108",
+        "Class": "149062"
+    },
+    {
+        "Day": "5",
+        "Time": "14:10-17:30",
+        "Weeks": "25-32, 34-42",
         "Room": "D9-501",
-        "Class": "143613"
+        "Class": "147770"
     }
 ];
+
 let lopDangKi_raw = [
     {
-        "Mã lớp": "143935",
-        "Mã lớp kèm": "143935",
-        "Tên lớp": "Tiếng Pháp VP 4",
-        "Mã HP": "FL1604",
+        "Mã lớp": "150821",
+        "Mã lớp kèm": "150821",
+        "Tên lớp": "Tâm lý học ứng dụng",
+        "Mã HP": "ED3280",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
+    },
+    {
+        "Mã lớp": "149062",
+        "Mã lớp kèm": "149062",
+        "Tên lớp": "Tiếng Pháp VP 5",
+        "Mã HP": "FL1605",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -149,10 +141,58 @@ let lopDangKi_raw = [
         "TC": "0"
     },
     {
-        "Mã lớp": "143645",
-        "Mã lớp kèm": "143645",
-        "Tên lớp": "Technical Writing and Presentation",
-        "Mã HP": "IT2030",
+        "Mã lớp": "147790",
+        "Mã lớp kèm": "147790",
+        "Tên lớp": "Kiến trúc máy tính lab",
+        "Mã HP": "IT3280",
+        "Loại lớp": "BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
+    },
+    {
+        "Mã lớp": "147786",
+        "Mã lớp kèm": "147786",
+        "Tên lớp": "Kiến trúc máy tính",
+        "Mã HP": "IT3283",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
+    },
+    {
+        "Mã lớp": "147777",
+        "Mã lớp kèm": "147777",
+        "Tên lớp": "Cơ sở dữ liệu lab",
+        "Mã HP": "IT3290",
+        "Loại lớp": "BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
+    },
+    {
+        "Mã lớp": "147774",
+        "Mã lớp kèm": "147774",
+        "Tên lớp": "Cơ sở dữ liệu",
+        "Mã HP": "IT3292",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
+    },
+    {
+        "Mã lớp": "147770",
+        "Mã lớp kèm": "147770",
+        "Tên lớp": "Tính toán khoa học",
+        "Mã HP": "IT4110",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -161,94 +201,22 @@ let lopDangKi_raw = [
         "TC": "3"
     },
     {
-        "Mã lớp": "143622",
-        "Mã lớp kèm": "143622",
-        "Tên lớp": "Điện tử cho CNTT lab",
-        "Mã HP": "IT2140",
-        "Loại lớp": "BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "143610",
-        "Mã lớp kèm": "143610",
-        "Tên lớp": "Cấu trúc dữ liệu và\ngiải thuật",
-        "Mã HP": "IT3011",
+        "Mã lớp": "149060",
+        "Mã lớp kèm": "149060",
+        "Tên lớp": "Phương trình vi phân và Chuỗi",
+        "Mã HP": "MI1134",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
-        "TC": "2"
+        "TC": "3"
     },
     {
-        "Mã lớp": "143606",
-        "Mã lớp kèm": "143606",
-        "Tên lớp": "Lập trình C cơ bản",
-        "Mã HP": "IT3230",
-        "Loại lớp": "BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "143616",
-        "Mã lớp kèm": "143616",
-        "Tên lớp": "Điện tử cho CNTT",
-        "Mã HP": "IT3420",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "143613",
-        "Mã lớp kèm": "143613",
-        "Tên lớp": "Xử lý tín hiệu",
-        "Mã HP": "IT4172",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "143570",
-        "Mã lớp kèm": "143570",
-        "Tên lớp": "Nhập môn\nkĩ thuật truyền thông",
-        "Mã HP": "IT4593",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "146411",
-        "Mã lớp kèm": "146411",
-        "Tên lớp": "Xác suất thống kê",
-        "Mã HP": "MI2021",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "733206",
-        "Mã lớp kèm": "733206",
-        "Tên lớp": "Bóng bàn 1",
-        "Mã HP": "PE2401",
+        "Mã lớp": "741372",
+        "Mã lớp kèm": "741372",
+        "Tên lớp": "Bóng bàn 2",
+        "Mã HP": "PE2402",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -257,10 +225,10 @@ let lopDangKi_raw = [
         "TC": "0"
     },
     {
-        "Mã lớp": "146781",
-        "Mã lớp kèm": "146780",
-        "Tên lớp": "Kinh tế chính trị\nMác - Lênin",
-        "Mã HP": "SSH1121",
+        "Mã lớp": "151086",
+        "Mã lớp kèm": "151083",
+        "Tên lớp": "Lịch sử Đảng",
+        "Mã HP": "SSH1141",
         "Loại lớp": "BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -268,7 +236,7 @@ let lopDangKi_raw = [
         "loại ĐK": "Online",
         "TC": "2"
     }
-  ];
+];
 
 let weekNum = 19;
 let selectDOM;
@@ -279,12 +247,11 @@ function setup() {
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
   	for (let i = 0; i < weekNum; i++) {
-  		//selectDOM.option("tuần " + (i + 25)); // semester 2
-  		selectDOM.option("tuần " + (i + 1)); // semester 1
+  		selectDOM.option("tuần " + (i + 25)); // semester 2
+  		//selectDOM.option("tuần " + (i + 1)); // semester 1
   	}
-  	//selectDOM.selected("tuần 25"); // semester 2
-    selectDOM.selected("tuần 3"); // semester 1
-  	//selectDOM.changed(onchangeSelEvent);
+  	selectDOM.selected("tuần 25"); // semester 2
+    //selectDOM.selected("tuần 3"); // semester 1
 
   	for (let i = 0; i < timetable_raw.length; i++) {
   		rerenderWeek(timetable_raw[i]);
@@ -301,14 +268,10 @@ function onchangeSelEvent() {
 
 function draw() {
 	background(225);
+    drawClass(parseInt(selectDOM.value().slice(5)));
 	drawUI();
 
-	drawClass(parseInt(selectDOM.value().slice(5)));
-
-
-
-
-
+	
 }
 
 function drawClass(week) {
@@ -317,7 +280,7 @@ function drawClass(week) {
 
 		if (classIsInThisWeek(timetable_raw[i], week)) {
 			let className = getClassName(timetable_raw[i]);
-      let classNameWidth = textWidth(className);
+            let classNameWidth = textWidth(className);
 			let colorAssigned = getColorAssigned(timetable_raw[i]);
 			let timeName = timetable_raw[i]["Time"];
 			let roomName = timetable_raw[i]["Room"];
@@ -328,18 +291,18 @@ function drawClass(week) {
 			push();
 			noStroke();
 			fill(colorAssigned[0], colorAssigned[1], colorAssigned[2]);
-			rect(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, cellWidth, endPoint - startPoint);
+			rect(50 + cellWidth * (timetable_raw[i]["Day"] - 1) + 2, startPoint, cellWidth - 4, endPoint - startPoint, 10);
 			pop();
 
 			push();
 			textSize(16);
-      textWrap(WORD);
-      textAlign(CENTER, TOP);
-      if (endPoint - startPoint <= (h - 70)/12) {
-        text(className + '\n' + timeName + '     ' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
-      } else {
-        text(className + '\n' + timeName + '\n' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
-      }
+            textWrap(WORD);
+            textAlign(CENTER, TOP);
+            if (endPoint - startPoint <= 60) {
+                text(className + '\n' + timeName + '     ' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
+            } else {
+                text(className + '\n' + timeName + '\n' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 4, cellWidth);
+            }
 			pop();
 		}
 	}
@@ -368,8 +331,8 @@ function mouseOnHover(topLeftX, topLeftY, wi, he) {
 function hightlight(topLeftX, topLeftY, start_point, end_point, time) {
 	let cellWidth = (w - 50) / 7;
 
-	drawDottedLine(topLeftX, topLeftY, 50, topLeftY);
-	drawDottedLine(topLeftX, topLeftY + end_point - start_point, 50, topLeftY + end_point - start_point);
+	drawDottedLine(topLeftX + 10, topLeftY, 50, topLeftY);
+	drawDottedLine(topLeftX + 10, topLeftY + end_point - start_point, 50, topLeftY + end_point - start_point);
 
 	push();
 	textAlign(CENTER, CENTER);
@@ -384,7 +347,7 @@ function hightlight(topLeftX, topLeftY, start_point, end_point, time) {
 	stroke(0);
 	strokeWeight(2);
 	noFill();
-	rect(topLeftX, topLeftY, cellWidth, end_point - start_point);
+	rect(topLeftX + 2, topLeftY, cellWidth - 4, end_point - start_point, 10);
 	pop();
 }
 
@@ -488,15 +451,18 @@ function assignColor() {
 function drawUI() {
 	push();
 	line(50, 50, w, 50);
-	line(50, 50, 50, h - 20);
+	line(50, 0, 50, h - 20);
 	line(50, h - 20, w, h - 20);
 	pop();
 
 	let cellWidth = (w - 50) / 7;
 
-	for (let i = 0; i < 7; i++) {
+	for (let i = 1; i < 7; i++) {
 		push();
-		line(50 + cellWidth * i, 0, 50 + cellWidth * i, h - 20);
+        line(50 + cellWidth * i, 0, 50 + cellWidth * i, 50);
+        drawingContext.setLineDash([20, 20]);
+        line(50 + cellWidth * i, 50 + 15, 50 + cellWidth * i, map(705, startDay, endDay, 50, h - 20));
+        line(50 + cellWidth * i, map(750, startDay, endDay, 50, h - 20) + 15, 50 + cellWidth * i, h - 20);
 		pop();
 	}
 
@@ -511,11 +477,13 @@ function drawUI() {
 	push();
 	textAlign(CENTER, CENTER);
 	textSize(16);
-	text("06:00", 25, 50);
+	text("06:45", 25, 50);
 	line(48, 50, 52, 50);
-	text("11:00", 25, map(11*60, startDay, endDay, 50, h - 20));
-	line(48, map(11*60, startDay, endDay, 50, h - 20), 52, map(11*60, startDay, endDay, 50, h - 20));
-	text("18:00", 25, h - 20);
+	text("11:45", 25, map(11*60 + 45, startDay, endDay, 50, h - 20));
+	line(48, map(11*60 + 45, startDay, endDay, 50, h - 20), w, map(11*60 + 45, startDay, endDay, 50, h - 20));
+    text("12:30", 25, map(12*60 + 30, startDay, endDay, 50, h - 20));
+    line(48, map(12*60 + 30, startDay, endDay, 50, h - 20), w, map(12*60 + 30, startDay, endDay, 50, h - 20));
+	text("17:30", 25, h - 20);
 	line(48, h - 20, 52, h - 20);
 	pop();
 }
