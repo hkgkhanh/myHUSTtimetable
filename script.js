@@ -23,104 +23,90 @@ let colors = [
 
 let timetable_raw = [
     {
-        "Day": "2",
-        "Time": "06:45-10:05",
-        "Weeks": "25-32,34-42",
-        "Room": "C7-111",
-        "Class": "149060"
+        "Thứ": "2",
+        "Thời gian": "09:20-11:45",
+        "Tuần học": "2-9,11-18",
+        "Phòng học": "C7-117",
+        "Lớp học": "152255"
     },
     {
-        "Day": "2",
-        "Time": "10:15-11:45",
-        "Weeks": "25-32,34-42",
-        "Room": "C7-108",
-        "Class": "149062"
+        "Thứ": "2",
+        "Thời gian": "12:30-14:55",
+        "Tuần học": "2,4,6,8,12,14,16,18",
+        "Phòng học": "D6-407",
+        "Lớp học": "155863"
     },
     {
-        "Day": "2",
-        "Time": "12:30-14:00",
-        "Weeks": "25-32, 34-42",
-        "Room": "D9-401",
-        "Class": "147774"
+        "Thứ": "2",
+        "Thời gian": "15:00-17:30",
+        "Tuần học": "7,9,12,14,16",
+        "Phòng học": "B1-204",
+        "Lớp học": "744483"
     },
     {
-        "Day": "2",
-        "Time": "15:05-17:30",
-        "Weeks": "25,27,29,31,35,37,39,41",
-        "Room": "D3-5-401",
-        "Class": "151083"
+        "Thứ": "3",
+        "Thời gian": "06:45-10:05",
+        "Tuần học": "2-9,11-18",
+        "Phòng học": "C7-212",
+        "Lớp học": "152259"
     },
     {
-        "Day": "2",
-        "Time": "15:05-17:30",
-        "Weeks": "26,28,30,32,34,36,38,40,42",
-        "Room": "D3-5-401",
-        "Class": "151086"
+        "Thứ": "3",
+        "Thời gian": "14:10-17:30",
+        "Tuần học": "2-9",
+        "Phòng học": "GD-B1",
+        "Lớp học": "153313"
     },
     {
-        "Day": "3",
-        "Time": "12:30-14:55",
-        "Weeks": "25-32, 34-42",
-        "Room": "D9-401",
-        "Class": "147786"
+        "Thứ": "4",
+        "Thời gian": "06:45-09:10",
+        "Tuần học": "2-9,11-18",
+        "Phòng học": "D9-501",
+        "Lớp học": "151964"
     },
     {
-        "Day": "3",
-        "Time": "15:05-17:30",
-        "Weeks": "25,27,29,31,34,36,38,40,42",
-        "Room": "D7-403",
-        "Class": "150821"
+        "Thứ": "4",
+        "Thời gian": "09:20-11:45",
+        "Tuần học": "2-9,11-18",
+        "Phòng học": "D9-401",
+        "Lớp học": "151961"
     },
     {
-        "Day": "4",
-        "Time": "06:45-07:45",
-        "Weeks": "25-32,34-42",
-        "Room": "NTD",
-        "Class": "741372"
+        "Thứ": "4",
+        "Thời gian": "12:30-15:00",
+        "Tuần học": "4,8,12,13,15",
+        "Phòng học": "B1-303",
+        "Lớp học": "744527"
     },
     {
-        "Day": "4",
-        "Time": "10:15-11:45",
-        "Weeks": "25-32, 34-42",
-        "Room": "B1-203",
-        "Class": "147790"
+        "Thứ": "5",
+        "Thời gian": "09:20-11:45",
+        "Tuần học": "2-9",
+        "Phòng học": "C7-117",
+        "Lớp học": "152257"
     },
     {
-        "Day": "4",
-        "Time": "12:30-14:00",
-        "Weeks": "25-32, 34-42",
-        "Room": "B1-203",
-        "Class": "147790"
+        "Thứ": "5",
+        "Thời gian": "14:00-15:00",
+        "Tuần học": "2-9,11-18",
+        "Phòng học": "SVD",
+        "Lớp học": "745060"
     },
     {
-        "Day": "4",
-        "Time": "14:10-17:30",
-        "Weeks": "25-32, 34-42",
-        "Room": "B1-205",
-        "Class": "147777"
-    },
-    {
-        "Day": "5",
-        "Time": "08:25-11:45",
-        "Weeks": "25-32,34-42",
-        "Room": "C7-108",
-        "Class": "149062"
-    },
-    {
-        "Day": "5",
-        "Time": "14:10-17:30",
-        "Weeks": "25-32, 34-42",
-        "Room": "D9-501",
-        "Class": "147770"
+        "Thứ": "6",
+        "Thời gian": "06:45-10:05",
+        "Tuần học": "2-9,11-18",
+        "Phòng học": "D9-501",
+        "Lớp học": "151959"
     }
 ];
 
 let lopDangKi_raw = [
     {
-        "Mã lớp": "150821",
-        "Mã lớp kèm": "150821",
-        "Tên lớp": "Tâm lý học ứng dụng",
-        "Mã HP": "ED3280",
+        "Mã lớp": "153313",
+        "Mã lớp kèm": "153313",
+        "Tên lớp": "Pháp luật đại cương",
+        "Mã HP": "EM1170",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -129,34 +115,10 @@ let lopDangKi_raw = [
         "TC": "2"
     },
     {
-        "Mã lớp": "149062",
-        "Mã lớp kèm": "149062",
-        "Tên lớp": "Tiếng Pháp VP 5",
-        "Mã HP": "FL1605",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "0"
-    },
-    {
-        "Mã lớp": "147790",
-        "Mã lớp kèm": "147790",
-        "Tên lớp": "Kiến trúc máy tính lab",
-        "Mã HP": "IT3280",
-        "Loại lớp": "BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "147786",
-        "Mã lớp kèm": "147786",
-        "Tên lớp": "Kiến trúc máy tính",
-        "Mã HP": "IT3283",
+        "Mã lớp": "155863",
+        "Mã lớp kèm": "155863",
+        "Tên lớp": "Văn hóa kinh doanh và tinh thần khởi nghiệp",
+        "Mã HP": "EM1180",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -165,34 +127,10 @@ let lopDangKi_raw = [
         "TC": "2"
     },
     {
-        "Mã lớp": "147777",
-        "Mã lớp kèm": "147777",
-        "Tên lớp": "Cơ sở dữ liệu lab",
-        "Mã HP": "IT3290",
-        "Loại lớp": "BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "147774",
-        "Mã lớp kèm": "147774",
-        "Tên lớp": "Cơ sở dữ liệu",
-        "Mã HP": "IT3292",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "2"
-    },
-    {
-        "Mã lớp": "147770",
-        "Mã lớp kèm": "147770",
-        "Tên lớp": "Tính toán khoa học",
-        "Mã HP": "IT4110",
+        "Mã lớp": "152255",
+        "Mã lớp kèm": "152255",
+        "Tên lớp": "Tiếng Pháp VP 6",
+        "Mã HP": "FL1606",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -201,10 +139,22 @@ let lopDangKi_raw = [
         "TC": "3"
     },
     {
-        "Mã lớp": "149060",
-        "Mã lớp kèm": "149060",
-        "Tên lớp": "Phương trình vi phân\nvà Chuỗi",
-        "Mã HP": "MI1134",
+        "Mã lớp": "152257",
+        "Mã lớp kèm": "152257",
+        "Tên lớp": "Tiếng Pháp VP 7",
+        "Mã HP": "FL1607",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "1"
+    },
+    {
+        "Mã lớp": "151959",
+        "Mã lớp kèm": "151959",
+        "Tên lớp": "Nguyên lý hệ điều hành",
+        "Mã HP": "IT3070",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -213,11 +163,23 @@ let lopDangKi_raw = [
         "TC": "3"
     },
     {
-        "Mã lớp": "741372",
-        "Mã lớp kèm": "741372",
-        "Tên lớp": "Bóng bàn 2",
-        "Mã HP": "PE2402",
+        "Mã lớp": "151961",
+        "Mã lớp kèm": "151961",
+        "Tên lớp": "Mạng máy tính",
+        "Mã HP": "IT3080",
         "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "TN",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "3"
+    },
+    {
+        "Mã lớp": "744483",
+        "Mã lớp kèm": "744483",
+        "Tên lớp": "Mạng máy tính",
+        "Mã HP": "IT3080",
+        "Loại lớp": "TN",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
@@ -225,16 +187,64 @@ let lopDangKi_raw = [
         "TC": "0"
     },
     {
-        "Mã lớp": "151086",
-        "Mã lớp kèm": "151083",
-        "Tên lớp": "Lịch sử Đảng",
-        "Mã HP": "SSH1141",
-        "Loại lớp": "BT",
+        "Mã lớp": "151964",
+        "Mã lớp kèm": "151964",
+        "Tên lớp": "Lập trình hướng đối tượng",
+        "Mã HP": "IT3103",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "TN",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "3"
+    },
+    {
+        "Mã lớp": "744527",
+        "Mã lớp kèm": "744527",
+        "Tên lớp": "Lập trình hướng đối tượng",
+        "Mã HP": "IT3103",
+        "Loại lớp": "TN",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "0"
+    },
+    {
+        "Mã lớp": "744277",
+        "Mã lớp kèm": "744277",
+        "Tên lớp": "Project I",
+        "Mã HP": "IT3150",
+        "Loại lớp": "ĐA",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
         "TC": "2"
+    },
+    {
+        "Mã lớp": "152259",
+        "Mã lớp kèm": "152259",
+        "Tên lớp": "Nhập môn công nghệ phần mềm",
+        "Mã HP": "IT3180",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "3"
+    },
+    {
+        "Mã lớp": "745060",
+        "Mã lớp kèm": "745060",
+        "Tên lớp": "Chạy",
+        "Mã HP": "PE2601",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "0"
     }
 ];
 
@@ -247,11 +257,11 @@ function setup() {
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
   	for (let i = 0; i < weekNum; i++) {
-  		selectDOM.option("tuần " + (i + 25)); // semester 2
-  		//selectDOM.option("tuần " + (i + 1)); // semester 1
+  		//selectDOM.option("tuần " + (i + 25)); // semester 2
+  		selectDOM.option("tuần " + (i + 1)); // semester 1
   	}
-  	selectDOM.selected("tuần 25"); // semester 2
-    //selectDOM.selected("tuần 3"); // semester 1
+  	//selectDOM.selected("tuần 25"); // semester 2
+    selectDOM.selected("tuần 3"); // semester 1
 
   	for (let i = 0; i < timetable_raw.length; i++) {
   		rerenderWeek(timetable_raw[i]);
@@ -280,16 +290,17 @@ function drawClass(week) {
 			let className = getClassName(timetable_raw[i]);
             let classNameWidth = textWidth(className);
 			let colorAssigned = getColorAssigned(timetable_raw[i]);
-			let timeName = timetable_raw[i]["Time"];
-			let roomName = timetable_raw[i]["Room"];
-			let classCode = timetable_raw[i]["Class"];
+			let timeName = timetable_raw[i]["Thời gian"];
+			let roomName = timetable_raw[i]["Phòng học"];
+			let classCode = timetable_raw[i]["Lớp học"];
 			let startPoint = map(timetable_raw[i]["startTime"], startDay, endDay, 50, h - 20);
 			let endPoint = map(timetable_raw[i]["endTime"], startDay, endDay, 50, h - 20);
 
 			push();
 			noStroke();
+            console.log(colorAssigned);
 			fill(colorAssigned[0], colorAssigned[1], colorAssigned[2]);
-			rect(50 + cellWidth * (timetable_raw[i]["Day"] - 1) + 2, startPoint, cellWidth - 4, endPoint - startPoint, 10);
+			rect(50 + cellWidth * (timetable_raw[i]["Thứ"] - 1) + 2, startPoint, cellWidth - 4, endPoint - startPoint, 10);
 			pop();
 
 			push();
@@ -297,9 +308,9 @@ function drawClass(week) {
             textWrap(WORD);
             textAlign(CENTER, TOP);
             if (endPoint - startPoint <= 60) {
-                text(className + '\n' + timeName + '     ' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 8, cellWidth);
+                text(className + '\n' + timeName + '     ' + roomName, 51 + cellWidth * (timetable_raw[i]["Thứ"] - 1), startPoint + 8, cellWidth);
             } else {
-                text(className + '\n' + timeName + '\n' + roomName, 51 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint + 8, cellWidth);
+                text(className + '\n' + timeName + '\n' + roomName, 51 + cellWidth * (timetable_raw[i]["Thứ"] - 1), startPoint + 8, cellWidth);
             }
 			pop();
 		}
@@ -309,14 +320,14 @@ function drawClass(week) {
     if (classIsInThisWeek(timetable_raw[i], week)) {
       let className = getClassName(timetable_raw[i]);
       let colorAssigned = getColorAssigned(timetable_raw[i]);
-      let timeName = timetable_raw[i]["Time"];
-      let roomName = timetable_raw[i]["Room"];
-      let classCode = timetable_raw[i]["Class"];
+      let timeName = timetable_raw[i]["Thời gian"];
+      let roomName = timetable_raw[i]["Phòng học"];
+      let classCode = timetable_raw[i]["Lớp học"];
       let startPoint = map(timetable_raw[i]["startTime"], startDay, endDay, 50, h - 20);
       let endPoint = map(timetable_raw[i]["endTime"], startDay, endDay, 50, h - 20);
       
-      if (mouseOnHover(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, cellWidth, endPoint - startPoint)) {
-        hightlight(50 + cellWidth * (timetable_raw[i]["Day"] - 1), startPoint, startPoint, endPoint, timeName);
+      if (mouseOnHover(50 + cellWidth * (timetable_raw[i]["Thứ"] - 1), startPoint, cellWidth, endPoint - startPoint)) {
+        hightlight(50 + cellWidth * (timetable_raw[i]["Thứ"] - 1), startPoint, startPoint, endPoint, timeName);
       }
     }
   }
@@ -375,7 +386,7 @@ function drawDottedLine(x1, y1, x2, y2) {
 function getClassName(data) {
 	let name;
 	for (let i = 0; i < lopDangKi_raw.length; i++) {
-		if (data["Class"] === lopDangKi_raw[i]["Mã lớp"] || data["Class"] === lopDangKi_raw[i]["Mã lớp kèm"]) {
+		if (data["Lớp học"] === lopDangKi_raw[i]["Mã lớp"] || data["Lớp học"] === lopDangKi_raw[i]["Mã lớp kèm"]) {
 			name = lopDangKi_raw[i]["Tên lớp"];
 			break;
 		}
@@ -387,7 +398,7 @@ function getClassName(data) {
 function getColorAssigned(data) {
 	let name;
 	for (let i = 0; i < lopDangKi_raw.length; i++) {
-		if (data["Class"] === lopDangKi_raw[i]["Mã lớp"] || data["Class"] === lopDangKi_raw[i]["Mã lớp kèm"]) {
+		if (data["Lớp học"] === lopDangKi_raw[i]["Mã lớp"] || data["Lớp học"] === lopDangKi_raw[i]["Mã lớp kèm"]) {
 			name = lopDangKi_raw[i]["color"];
 			break;
 		}
@@ -408,7 +419,7 @@ function classIsInThisWeek(subject, thisWeek) {
 }
 
 function rerenderWeek(data) {
-	let arr = data["Weeks"].split(",");
+	let arr = data["Tuần học"].split(",");
 	let weeks = [];
 	for (let i = 0; i < arr.length; i++) {
 		if (arr[i].includes("-")) {
@@ -426,12 +437,12 @@ function rerenderWeek(data) {
 }
 
 function rerenderTime(data) {
-	let startTimeText = data["Time"].slice(0, 5);
+	let startTimeText = data["Thời gian"].slice(0, 5);
 	let startHour = parseInt(startTimeText.slice(0, 2));
 	let startMinute = parseInt(startTimeText.slice(3, 5));
 	let startTime = startHour * 60 + startMinute;
 
-	let endTimeText = data["Time"].slice(6, 11);
+	let endTimeText = data["Thời gian"].slice(6, 11);
 	let endHour = parseInt(endTimeText.slice(0, 2));
 	let endMinute = parseInt(endTimeText.slice(3, 5));
 	let endTime = endHour * 60 + endMinute;
