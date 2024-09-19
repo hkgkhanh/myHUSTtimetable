@@ -177,7 +177,7 @@ let lopDangKi_raw = [
     {
         "Mã lớp": "744483",
         "Mã lớp kèm": "744483",
-        "Tên lớp": "Mạng máy tính",
+        "Tên lớp": "Mạng máy tính (TN)",
         "Mã HP": "IT3080",
         "Loại lớp": "TN",
         "TT lớp": "Điều chỉnh đăng ký",
@@ -189,7 +189,7 @@ let lopDangKi_raw = [
     {
         "Mã lớp": "151964",
         "Mã lớp kèm": "151964",
-        "Tên lớp": "Lập trình hướng đối tượng",
+        "Tên lớp": "Lập trình\nhướng đối tượng",
         "Mã HP": "IT3103",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
@@ -201,7 +201,7 @@ let lopDangKi_raw = [
     {
         "Mã lớp": "744527",
         "Mã lớp kèm": "744527",
-        "Tên lớp": "Lập trình hướng đối tượng",
+        "Tên lớp": "Lập trình\nhướng đối tượng (TN)",
         "Mã HP": "IT3103",
         "Loại lớp": "TN",
         "TT lớp": "Điều chỉnh đăng ký",
@@ -251,8 +251,26 @@ let lopDangKi_raw = [
 let weekNum = 19;
 let selectDOM;
 
+let currSemester = 1; // change this when update new semester
+let startDate1 = new Date("September 2, 2024");
+let startDate2 = new Date("February 10, 2025");
+let currDate;
+
 function setup() {
 	createCanvas(w, h);
+
+    currDate = Date.now();
+
+    let weeksPassed;
+
+    if (currSemester == 1) {
+        weeksPassed = Math.ceil((currDate - startDate1) / (1000 * 60 * 60 * 24 * 7));
+    } else {
+        weeksPassed = Math.ceil((currDate - startDate2) / (1000 * 60 * 60 * 24 * 7));
+    }
+    //console.log(weeksPassed);
+
+    let weekString = "tuần " + weeksPassed;
 
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
@@ -261,7 +279,8 @@ function setup() {
   		selectDOM.option("tuần " + (i + 1)); // semester 1
   	}
   	//selectDOM.selected("tuần 25"); // semester 2
-    selectDOM.selected("tuần 3"); // semester 1
+    //selectDOM.selected("tuần 3"); // semester 1
+    selectDOM.selected(weekString);
 
   	for (let i = 0; i < timetable_raw.length; i++) {
   		rerenderWeek(timetable_raw[i]);
@@ -298,7 +317,7 @@ function drawClass(week) {
 
 			push();
 			noStroke();
-            console.log(colorAssigned);
+            //console.log(colorAssigned);
 			fill(colorAssigned[0], colorAssigned[1], colorAssigned[2]);
 			rect(50 + cellWidth * (timetable_raw[i]["Thứ"] - 1) + 2, startPoint, cellWidth - 4, endPoint - startPoint, 10);
 			pop();
