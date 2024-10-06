@@ -98,6 +98,13 @@ let timetable_raw = [
         "Tuần học": "2-9,11-18",
         "Phòng học": "D9-501",
         "Lớp học": "151959"
+    },
+    {
+        "Thứ": "6",
+        "Thời gian": "13:30-15:00",
+        "Tuần học": "2-9,11-18",
+        "Phòng học": "B1-704",
+        "Lớp học": "744277"
     }
 ];
 
@@ -240,6 +247,18 @@ let lopDangKi_raw = [
         "Tên lớp": "Chạy",
         "Mã HP": "PE2601",
         "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "0"
+    },
+    {
+        "Mã lớp": "744277",
+        "Mã lớp kèm": "744277",
+        "Tên lớp": "Project 1",
+        "Mã HP": "IT3150",
+        "Loại lớp": "DA",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
