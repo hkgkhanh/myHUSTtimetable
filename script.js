@@ -24,96 +24,61 @@ let colors = [
 let timetable_raw = [
     {
         "Thứ": "2",
-        "Thời gian": "09:20-11:45",
-        "Tuần học": "2-9,11-18",
-        "Phòng học": "C7-117",
-        "Lớp học": "152255"
-    },
-    {
-        "Thứ": "2",
-        "Thời gian": "12:30-14:55",
-        "Tuần học": "2,4,6,8,12,14,16,18",
-        "Phòng học": "D6-407",
-        "Lớp học": "155863"
-    },
-    {
-        "Thứ": "2",
-        "Thời gian": "15:00-17:30",
-        "Tuần học": "7,9,12,14,16",
-        "Phòng học": "B1-204",
-        "Lớp học": "744483"
-    },
-    {
-        "Thứ": "3",
-        "Thời gian": "06:45-10:05",
-        "Tuần học": "2-9,11-18",
-        "Phòng học": "C7-212",
-        "Lớp học": "152259"
-    },
-    {
-        "Thứ": "3",
-        "Thời gian": "14:10-17:30",
-        "Tuần học": "2-9",
-        "Phòng học": "GD-B1",
-        "Lớp học": "153313"
-    },
-    {
-        "Thứ": "4",
-        "Thời gian": "06:45-09:10",
-        "Tuần học": "2-9,11-18",
+        "Thời gian": "14:10-15:50",
+        "Tuần học": "24-31,33-41",
         "Phòng học": "D9-501",
-        "Lớp học": "151964"
+        "Lớp học": "156727"
     },
     {
         "Thứ": "4",
-        "Thời gian": "09:20-11:45",
-        "Tuần học": "2-9,11-18",
+        "Thời gian": "10:15-11:45",
+        "Tuần học": "24-31,33-41",
         "Phòng học": "D9-401",
-        "Lớp học": "151961"
+        "Lớp học": "156701"
     },
     {
         "Thứ": "4",
-        "Thời gian": "12:30-15:00",
-        "Tuần học": "4,8,12,13,15",
-        "Phòng học": "B1-303",
-        "Lớp học": "744527"
+        "Thời gian": "15:05-17:30",
+        "Tuần học": "25,27,29,31,34,36,38,40",
+        "Phòng học": "C7-238",
+        "Lớp học": "157092"
     },
     {
         "Thứ": "5",
-        "Thời gian": "09:20-11:45",
-        "Tuần học": "2-9",
-        "Phòng học": "C7-117",
-        "Lớp học": "152257"
+        "Thời gian": "14:10-17:30",
+        "Tuần học": "24-31,33-41",
+        "Phòng học": "C7-115",
+        "Lớp học": "157091"
     },
     {
-        "Thứ": "5",
-        "Thời gian": "14:00-15:00",
-        "Tuần học": "2-9,11-18",
+        "Thứ": "6",
+        "Thời gian": "06:45-09:10",
+        "Tuần học": "25,27,29,31,34,36,38,40",
+        "Phòng học": "D6-208",
+        "Lớp học": "158860"
+    },
+    {
+        "Thứ": "6",
+        "Thời gian": "12:30-14:55",
+        "Tuần học": "24-31,33-41",
+        "Phòng học": "C7-226",
+        "Lớp học": "157090"
+    },
+    {
+        "Thứ": "6",
+        "Thời gian": "15:30-16:30",
+        "Tuần học": "24-31,33-41",
         "Phòng học": "SVD",
-        "Lớp học": "745060"
-    },
-    {
-        "Thứ": "6",
-        "Thời gian": "06:45-10:05",
-        "Tuần học": "2-9,11-18",
-        "Phòng học": "D9-501",
-        "Lớp học": "151959"
-    },
-    {
-        "Thứ": "6",
-        "Thời gian": "13:30-15:00",
-        "Tuần học": "2-9,11-18",
-        "Phòng học": "B1-704",
-        "Lớp học": "744277"
+        "Lớp học": "750303"
     }
 ];
 
 let lopDangKi_raw = [
     {
-        "Mã lớp": "153313",
-        "Mã lớp kèm": "153313",
-        "Tên lớp": "Pháp luật đại cương",
-        "Mã HP": "EM1170",
+        "Mã lớp": "158860",
+        "Mã lớp kèm": "158860",
+        "Tên lớp": "Quản trị học đại cương",
+        "Mã HP": "EM1010",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -122,10 +87,10 @@ let lopDangKi_raw = [
         "TC": "2"
     },
     {
-        "Mã lớp": "155863",
-        "Mã lớp kèm": "155863",
-        "Tên lớp": "Văn hóa kinh doanh và tinh thần khởi nghiệp",
-        "Mã HP": "EM1180",
+        "Mã lớp": "157090",
+        "Mã lớp kèm": "157090",
+        "Tên lớp": "Phân tích và thiết kế hệ thống",
+        "Mã HP": "IT3120",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -134,10 +99,10 @@ let lopDangKi_raw = [
         "TC": "2"
     },
     {
-        "Mã lớp": "152255",
-        "Mã lớp kèm": "152255",
-        "Tên lớp": "Tiếng Pháp VP 6",
-        "Mã HP": "FL1606",
+        "Mã lớp": "156727",
+        "Mã lớp kèm": "156727",
+        "Tên lớp": "Nhập môn Trí tuệ nhân tạo",
+        "Mã HP": "IT3160",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -146,82 +111,10 @@ let lopDangKi_raw = [
         "TC": "3"
     },
     {
-        "Mã lớp": "152257",
-        "Mã lớp kèm": "152257",
-        "Tên lớp": "Tiếng Pháp VP 7",
-        "Mã HP": "FL1607",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "1"
-    },
-    {
-        "Mã lớp": "151959",
-        "Mã lớp kèm": "151959",
-        "Tên lớp": "Nguyên lý hệ điều hành",
-        "Mã HP": "IT3070",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "3"
-    },
-    {
-        "Mã lớp": "151961",
-        "Mã lớp kèm": "151961",
-        "Tên lớp": "Mạng máy tính",
-        "Mã HP": "IT3080",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "TN",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "3"
-    },
-    {
-        "Mã lớp": "744483",
-        "Mã lớp kèm": "744483",
-        "Tên lớp": "Mạng máy tính (TN)",
-        "Mã HP": "IT3080",
-        "Loại lớp": "TN",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "0"
-    },
-    {
-        "Mã lớp": "151964",
-        "Mã lớp kèm": "151964",
-        "Tên lớp": "Lập trình\nhướng đối tượng",
-        "Mã HP": "IT3103",
-        "Loại lớp": "LT+BT",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "TN",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "3"
-    },
-    {
-        "Mã lớp": "744527",
-        "Mã lớp kèm": "744527",
-        "Tên lớp": "Lập trình\nhướng đối tượng (TN)",
-        "Mã HP": "IT3103",
-        "Loại lớp": "TN",
-        "TT lớp": "Điều chỉnh đăng ký",
-        "Yêu cầu": "",
-        "Trạng thái ĐK": "Thành công",
-        "loại ĐK": "Online",
-        "TC": "0"
-    },
-    {
-        "Mã lớp": "744277",
-        "Mã lớp kèm": "744277",
-        "Tên lớp": "Project I",
-        "Mã HP": "IT3150",
+        "Mã lớp": "750644",
+        "Mã lớp kèm": "750644",
+        "Tên lớp": "Project II",
+        "Mã HP": "IT3930",
         "Loại lớp": "ĐA",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -230,10 +123,10 @@ let lopDangKi_raw = [
         "TC": "2"
     },
     {
-        "Mã lớp": "152259",
-        "Mã lớp kèm": "152259",
-        "Tên lớp": "Nhập môn công nghệ phần mềm",
-        "Mã HP": "IT3180",
+        "Mã lớp": "157091",
+        "Mã lớp kèm": "157091",
+        "Tên lớp": "Nhập môn an toàn thông tin",
+        "Mã HP": "IT4015",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
@@ -242,23 +135,47 @@ let lopDangKi_raw = [
         "TC": "3"
     },
     {
-        "Mã lớp": "745060",
-        "Mã lớp kèm": "745060",
-        "Tên lớp": "Chạy",
-        "Mã HP": "PE2601",
+        "Mã lớp": "156701",
+        "Mã lớp kèm": "156701",
+        "Tên lớp": "Quản trị phát triển phần mềm",
+        "Mã HP": "IT4542",
         "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
         "loại ĐK": "Online",
-        "TC": "0"
+        "TC": "2"
     },
     {
-        "Mã lớp": "744277",
-        "Mã lớp kèm": "744277",
-        "Tên lớp": "Project 1",
-        "Mã HP": "IT3150",
-        "Loại lớp": "DA",
+        "Mã lớp": "157092",
+        "Mã lớp kèm": "157092",
+        "Tên lớp": "Các hệ thống phân tán và ứng dụng",
+        "Mã HP": "IT4611",
+        "Loại lớp": "LT+BT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
+    },
+    {
+        "Mã lớp": "750656",
+        "Mã lớp kèm": "750656",
+        "Tên lớp": "Thực tập kỹ thuật",
+        "Mã HP": "IT4991",
+        "Loại lớp": "TT",
+        "TT lớp": "Điều chỉnh đăng ký",
+        "Yêu cầu": "",
+        "Trạng thái ĐK": "Thành công",
+        "loại ĐK": "Online",
+        "TC": "2"
+    },
+    {
+        "Mã lớp": "750303",
+        "Mã lớp kèm": "750303",
+        "Tên lớp": "Bóng đá 1",
+        "Mã HP": "PE2201",
+        "Loại lớp": "LT+BT",
         "TT lớp": "Điều chỉnh đăng ký",
         "Yêu cầu": "",
         "Trạng thái ĐK": "Thành công",
@@ -270,35 +187,38 @@ let lopDangKi_raw = [
 let weekNum = 19;
 let selectDOM;
 
-let currSemester = 1; // change this when update new semester
+let currSemester = 2; // change this when update new semester
 let startDate1 = new Date("September 2, 2024");
 let startDate2 = new Date("February 10, 2025");
 let currDate;
+let firstSemesterWeek;
+let lastSemesterWeek;
 
 function setup() {
 	createCanvas(w, h);
-
     currDate = Date.now();
-
     let weeksPassed;
 
-    if (currSemester == 1) {
-        weeksPassed = Math.ceil((currDate - startDate1) / (1000 * 60 * 60 * 24 * 7));
-    } else {
-        weeksPassed = Math.ceil((currDate - startDate2) / (1000 * 60 * 60 * 24 * 7));
-    }
-    //console.log(weeksPassed);
+    // if (currSemester == 1) {
+    //     weeksPassed = Math.ceil((currDate - startDate1) / (1000 * 60 * 60 * 24 * 7));
+    // } else {
+    //     weeksPassed = Math.ceil((currDate - startDate2) / (1000 * 60 * 60 * 24 * 7));
+    // }
+
+    weeksPassed = Math.ceil((currDate - startDate1) / (1000 * 60 * 60 * 24 * 7));
+    // console.log(weeksPassed);
+    // weeksPassed = 1;
 
     let weekString = "tuần " + weeksPassed;
 
+    firstSemesterWeek = getFirstSemesterWeek();
+    lastSemesterWeek = getLastSemesterWeek();
+
 	selectDOM = createSelect();
 	selectDOM.position(w + 10, 10);
-  	for (let i = 0; i < weekNum; i++) {
-  		//selectDOM.option("tuần " + (i + 25)); // semester 2
-  		selectDOM.option("tuần " + (i + 1)); // semester 1
+  	for (let i = firstSemesterWeek; i <= lastSemesterWeek; i++) {
+        selectDOM.option("tuần " + i);
   	}
-  	//selectDOM.selected("tuần 25"); // semester 2
-    //selectDOM.selected("tuần 3"); // semester 1
     selectDOM.selected(weekString);
 
   	for (let i = 0; i < timetable_raw.length; i++) {
@@ -318,6 +238,29 @@ function draw() {
 	background(225);
     drawClass(parseInt(selectDOM.value().slice(5)));
 	drawUI();
+}
+
+function getFirstSemesterWeek() {
+    let currMin = 50;
+    for (let i = 0; i < timetable_raw.length; i++) {
+        let string = timetable_raw[i]["Tuần học"];
+        let nonNumberIndex = string.indexOf("-") < string.indexOf(",") ? string.indexOf("-") : string.indexOf(",");
+        let part = parseInt(string.slice(0, nonNumberIndex));
+
+        if (currMin > part) currMin = part;
+    }
+    return currMin;
+}
+
+function getLastSemesterWeek() {
+    let currMax = 0;
+    for (let i = 0; i < timetable_raw.length; i++) {
+        let string = timetable_raw[i]["Tuần học"];
+        let part = parseInt(string.slice(-2));
+
+        if (currMax < part) currMax = part;
+    }
+    return currMax;
 }
 
 function drawClass(week) {
